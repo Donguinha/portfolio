@@ -18,3 +18,16 @@ body {
   font-size: 200%;
   color: white;
 }
+
+.background-color {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
+
+.flex-direction {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+}
