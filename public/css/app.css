@@ -1,0 +1,33 @@
+body {
+    background-image: url("../images/background-wallpaper.png");
+    /* background-size: cover; */
+    background-color: #1b1b1b;
+    /* background-repeat: no-repeat; */
+}
+
+.font-black {
+    font: bold;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 500%;
+    color: white;
+}
+
+.font-lorem {
+    font: bold;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 200%;
+    color: white;
+}
+
+.background-color {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+.flex-direction {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+}
