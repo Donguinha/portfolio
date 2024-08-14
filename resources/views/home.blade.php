@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/app.css" />
 </head>
 
-<body>
+<body">
     <h1 class="font-black">Lorem ipsum</h1>
     <div class="flex-direction">
         <section class="background-color">
@@ -22,6 +22,6 @@
             <p>section second paragraph</p>
         </section>
     </div>
-</body>
+    </body>
 
 </html>
