@@ -18,7 +18,7 @@ body {
   background: 
     linear-gradient(to bottom, #1b1b1b00 20%, #8a8a8a 90%),
     url("images/background-wallpaper.png")
-    top/contain 
+    top/100% 
     no-repeat
     scroll
     #1b1b1b;
