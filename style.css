@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
-html {
+shtml {
   box-sizing: border-box;
 }
 
@@ -11,23 +11,22 @@ html {
 }
 
 body {
-  font-family: "Ubuntu Sans";
+  font-family: "Fira Code";
 }
 
-.container {
+.main-container {
   background: 
-    linear-gradient(to bottom, #1b1b1b00 20%, #8a8a8a 90%),
     url("images/background-wallpaper.png")
     top/100% 
     no-repeat
-    scroll
     #1b1b1b;
-  border: 2px solid #ff0095;
-  height: 500px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 2px gray;
 }
 
 .font-white {
-  font-size: 200%;
+  font-size: 3em;
   color: white;
 }
 
