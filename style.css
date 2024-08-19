@@ -16,18 +16,36 @@ html {
 }
 
 body {
+  background:    url("images/background-wallpaper.png") top/100% no-repeat     #1b1b1b;
   font-family: "Fira Code";
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  padding: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu li {
+  display: block;
+  padding: 15px;
+  font-size: 1.5em;
+  list-style: none;
+}
+
 .main-container {
-  background: 
-    url("images/background-wallpaper.png")
-    top/100% 
-    no-repeat
-    #1b1b1b;
-  width: 500px;
+  
   margin: auto;
   box-shadow: 5px 5px 2px gray;
+  display: flex;
 }
 
 .font-white {
