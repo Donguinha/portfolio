@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
   padding: 0;
@@ -13,15 +13,21 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
-  background: linear-gradient(to bottom, #1b1b1b00, #1b1b1b 43%, #3c3b3b 100%),
-    url("images/background-wallpaper.png") top/100% no-repeat #111010;
-  font-family: "Fira Code";
+  background: 
+    linear-gradient(to bottom, #1b1b1b00, #1b1b1b 60%, #3c3b3b 100%),
+    url("images/background-wallpaper.png") 
+    top/cover
+    no-repeat 
+    #111010;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
 }
 
-a {
+header nav ul li a {
   text-decoration: none;
   color: white;
 }
@@ -50,93 +56,68 @@ a {
 
 .home-container {
   display: flex;
-  height: 500px;
-}
-
-.career-container {
-  display: flex;
-  height: 500px;
-}
-
-.projects-container {
-  display: flex;
-  height: 500px;
-}
-
-.contact-container {
-  display: flex;
-  height: 500px;
-}
-
-.font-white {
-  font-size: 3em;
-  color: white;
-}
-
-.background-color {
-  background-color: aqua;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.portfolio-container {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  border: 10px solid red;
+  padding: 20px;
 }
 
 .profile-container {
-  text-align: center;
-}
-
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  margin-bottom: 20px;
-}
-
-.name {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.title {
-  background-color: #333;
-  padding: 5px 10px;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-.social-links {
-  margin-top: 20px;
-}
-
-.social-links a {
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.social-links img {
-  width: 40px;
-  height: 40px;
-}
-
-.projects {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px;
-}
-
-.project-box {
-  background-color: #333;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-grow: 3; */
+  flex-direction: column;
+  width: 50%;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 17px 0px 0px white;
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  margin-top: 70px;
+}
+
+.profile-container h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 30px;
+  background-color: #1b1b1b;
+  border: 3px solid white;
+  border-radius: 27px;
+  box-shadow: 8px 10px 0px white;
+  padding: 20px 100px 20px 100px;
+}
+
+.profile-container h2 {
   font-size: 1.5em;
-  color: #fff;
+  font-weight: 200;
+  margin-top: 30px;
+  border: 3px solid white;
+  border-radius: 21px;
+  box-shadow: 8px 10px 0px white;
+  padding: 15px 40px 15px 40px;
+}
+
+
+.github-logo {
+  margin: 50px 20px 0px 0px;
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 21px;
+  box-shadow: 8px 10px 0px white;
+  padding: 10px;
+}
+
+.linkedin-logo {
+  margin-top: 50px;
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 19px;
+  box-shadow: 8px 10px 0px white;
+  padding: 3px;
+}
+
+.description-container {
+  flex-grow: 6;
 }
