@@ -125,3 +125,23 @@ header nav ul li a {
   font-weight: 100;
   text-align: justify;
 }
+ 
+.loader {
+  margin: 10vh;
+  background-color: aquamarine;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-color: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: animate 0.5s linear infinite;
+}
+
+.loader span{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 50%;
+  background-color: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: animate 0.5s linear infinite;
+}
