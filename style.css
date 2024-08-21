@@ -56,21 +56,20 @@ header nav ul li a {
 
 .home-container {
   display: flex;
+  align-items: center;
   padding-top: 3vh;
 }
 
 .profile-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: inherit;
   flex-direction: column;
   width: 40%;
 }
 
 .profile-image {
   border-radius: 50%;
-  border: 6px solid white;
-  box-shadow: 17px 0px 0px white;
+  box-shadow: white 0 0 0 5px, white 20px 0 0 5px;
   max-width: 100%;
   width: 300px;
   height: auto;
@@ -82,9 +81,8 @@ header nav ul li a {
   font-weight: 400;
   margin-top: 30px;
   background-color: #1b1b1b;
-  border: 3px solid white;
   border-radius: 27px;
-  box-shadow: 8px 10px 0px white;
+  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
   padding: 20px 100px 20px 100px;
 }
 
@@ -92,43 +90,35 @@ header nav ul li a {
   font-size: 1.5em;
   font-weight: 200;
   margin-top: 30px;
-  border: 3px solid white;
   border-radius: 21px;
-  box-shadow: 8px 10px 0px white;
+  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
   padding: 15px 40px 15px 40px;
 }
-
 
 .github-logo {
   margin: 50px 20px 0px 0px;
   width: 100px;
-  border: 3px solid white;
   border-radius: 21px;
-  box-shadow: 8px 10px 0px white;
+  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
   padding: 10px;
 }
 
 .linkedin-logo {
   margin-top: 50px;
   width: 100px;
-  border: 3px solid white;
   border-radius: 19px;
-  box-shadow: 8px 10px 0px white;
-  padding: 3px;
+  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
+  padding: 5px;
 }
 
 .description-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
+  width: 60%;
 }
 
 .description {
   background-color: #1b1b1b;
-  border: 3px solid white;
   border-radius: 19px;
-  box-shadow: 8px 10px 0px white;
+  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
   margin: 0 10% 0 0;
   padding: 30px;
   font-size: larger;
