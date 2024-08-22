@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 * {
   padding: 0;
@@ -17,12 +17,8 @@ html {
 }
 
 body {
-  background: 
-    linear-gradient(to bottom, #1b1b1b00, #1b1b1b 60%, #3c3b3b 100%),
-    url("images/background-wallpaper.png") 
-    top/cover
-    no-repeat 
-    #111010;
+  background: linear-gradient(to bottom, #1b1b1b00, #1b1b1b 60%, #3c3b3b 100%),
+    url("images/background-wallpaper.png") top/cover no-repeat #111010;
   font-family: "Ubuntu", sans-serif;
   color: white;
 }
@@ -82,7 +78,7 @@ header nav ul li a {
   margin-top: 30px;
   background-color: #1b1b1b;
   border-radius: 27px;
-  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
+  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
   padding: 20px 100px 20px 100px;
 }
 
@@ -91,7 +87,7 @@ header nav ul li a {
   font-weight: 200;
   margin-top: 30px;
   border-radius: 21px;
-  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
+  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
   padding: 15px 40px 15px 40px;
 }
 
@@ -99,7 +95,7 @@ header nav ul li a {
   margin: 50px 20px 0px 0px;
   width: 100px;
   border-radius: 21px;
-  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
+  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
   padding: 10px;
 }
 
@@ -107,7 +103,7 @@ header nav ul li a {
   margin-top: 50px;
   width: 100px;
   border-radius: 19px;
-  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
+  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
   padding: 5px;
 }
 
@@ -118,30 +114,10 @@ header nav ul li a {
 .description {
   background-color: #1b1b1b;
   border-radius: 19px;
-  box-shadow: white 0 0 0 3px,white 7px 7px 0 3px;
+  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
   margin: 0 10% 0 0;
   padding: 30px;
   font-size: larger;
   font-weight: 100;
   text-align: justify;
-}
- 
-.loader {
-  margin: 10vh;
-  background-color: aquamarine;
-  height: 100px;
-  width: 100px;
-  position: relative;
-  border-radius: 50%;
-  background-color: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-  animation: animate 0.5s linear infinite;
-}
-
-.loader span{
-  height: 100%;
-  width: 100%;
-  position: relative;
-  border-radius: 50%;
-  background-color: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-  animation: animate 0.5s linear infinite;
 }
