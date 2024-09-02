@@ -13,6 +13,7 @@
 
 :root {
   --outline: white 0 0 0 3px, white 7px 7px 0 3px;
+  --border-radius: 15px;
 }
 
 html {
@@ -27,7 +28,7 @@ body {
   color: white;
 }
 
-header nav ul li a {
+a {
   text-decoration: none;
   color: white;
 }
@@ -42,7 +43,7 @@ header nav ul li a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #1b1b1b;
-  border-radius: 18px;
+  border-radius: var(--border-radius);
   margin: 0 25% 0 25%;
   box-shadow: var(--outline);
 }
@@ -58,13 +59,15 @@ header nav ul li a {
   align-items: center;
   padding-top: 3vh;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .profile-container {
   display: flex;
   align-items: inherit;
   flex-direction: column;
-  width: 40%;
+  flex-basis: 40%;
+  padding: 20px;
 }
 
 .profile-image {
@@ -77,63 +80,60 @@ header nav ul li a {
 }
 
 .profile-container h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
   margin-top: 30px;
   background-color: #1b1b1b;
-  border-radius: 27px;
+  border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  padding: 20px 100px 20px 100px;
+  padding: 18px 100px 18px 100px;
 }
 
 .profile-container h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 200;
   margin-top: 30px;
-  border-radius: 21px;
+  border-radius: var(--border-radius);
   box-shadow: var(--outline);
   padding: 15px 40px 15px 40px;
 }
 
 .github-logo {
-  margin: 50px 20px 0px 0px;
-  width: 100px;
-  border-radius: 21px;
+  margin: 50px 50px 0px 0px;
+  width: 70px;
+  border-radius: var(--border-radius);
   box-shadow: var(--outline);
   padding: 10px;
 }
 
 .linkedin-logo {
   margin-top: 50px;
-  width: 100px;
-  border-radius: 19px;
+  width: 70px;
+  border-radius: var(--border-radius);
   box-shadow: var(--outline);
   padding: 5px;
 }
 
 .description-container {
-  width: 60%;
-  gap: 10%;
+  padding: 20px;
+  flex-basis: 60%;
 }
 
 .description {
   background-color: #1b1b1b;
-  border-radius: 19px;
+  border-radius: var(--border-radius);
   box-shadow: var(--outline);
   margin: 0 10% 0 0;
   padding: 30px;
-  font-size: larger;
-  font-weight: 100;
+  font-size: 1.2em;
   text-align: justify;
 }
 
 .skills-container {
   background-color: #1b1b1b;
-  border-radius: 19px;
+  border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  margin: 5vh 100px 0 0;
+  margin: 50px 10% 0 0;
   padding: 30px;
-  font-size: larger;
-  font-weight: 100;
-  text-align: justify;
+  font-size: 1.2em;
 }
