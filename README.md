@@ -1,3 +1,3 @@
 # Meu portfólio
 
-Feito com html, css e javascript básicos.
+Portfólio feito com html, css e javascript básicos.
