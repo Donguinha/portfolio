@@ -11,6 +11,10 @@
   box-sizing: inherit;
 }
 
+:root {
+  --outline: white 0 0 0 3px, white 7px 7px 0 3px;
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -38,15 +42,14 @@ header nav ul li a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #1b1b1b;
-  border-radius: 20px;
+  border-radius: 18px;
   margin: 0 25% 0 25%;
-  border: 2px solid white;
-  box-shadow: 8px 8px 0px white;
+  box-shadow: var(--outline);
 }
 
 .menu li {
   padding: 15px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   list-style: none;
 }
 
@@ -54,6 +57,7 @@ header nav ul li a {
   display: flex;
   align-items: center;
   padding-top: 3vh;
+  width: 100%;
 }
 
 .profile-container {
@@ -78,7 +82,7 @@ header nav ul li a {
   margin-top: 30px;
   background-color: #1b1b1b;
   border-radius: 27px;
-  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
+  box-shadow: var(--outline);
   padding: 20px 100px 20px 100px;
 }
 
@@ -87,7 +91,7 @@ header nav ul li a {
   font-weight: 200;
   margin-top: 30px;
   border-radius: 21px;
-  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
+  box-shadow: var(--outline);
   padding: 15px 40px 15px 40px;
 }
 
@@ -95,7 +99,7 @@ header nav ul li a {
   margin: 50px 20px 0px 0px;
   width: 100px;
   border-radius: 21px;
-  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
+  box-shadow: var(--outline);
   padding: 10px;
 }
 
@@ -103,7 +107,7 @@ header nav ul li a {
   margin-top: 50px;
   width: 100px;
   border-radius: 19px;
-  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
+  box-shadow: var(--outline);
   padding: 5px;
 }
 
@@ -115,7 +119,7 @@ header nav ul li a {
 .description {
   background-color: #1b1b1b;
   border-radius: 19px;
-  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
+  box-shadow: var(--outline);
   margin: 0 10% 0 0;
   padding: 30px;
   font-size: larger;
@@ -126,8 +130,8 @@ header nav ul li a {
 .skills-container {
   background-color: #1b1b1b;
   border-radius: 19px;
-  box-shadow: white 0 0 0 3px, white 7px 7px 0 3px;
-  margin: 5vh 10% 0 0;
+  box-shadow: var(--outline);
+  margin: 5vh 100px 0 0;
   padding: 30px;
   font-size: larger;
   font-weight: 100;
