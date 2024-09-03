@@ -57,7 +57,7 @@ a {
 .home-container {
   display: flex;
   align-items: center;
-  padding-top: 3vh;
+  padding-top: 30px;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -66,7 +66,6 @@ a {
   display: flex;
   align-items: inherit;
   flex-direction: column;
-  flex-basis: 40%;
   padding: 20px;
 }
 
@@ -87,6 +86,7 @@ a {
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
   padding: 18px 100px 18px 100px;
+  text-align: center;
 }
 
 .profile-container h2 {
@@ -96,6 +96,7 @@ a {
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
   padding: 15px 40px 15px 40px;
+  text-align: center;
 }
 
 .github-logo {
@@ -116,14 +117,13 @@ a {
 
 .description-container {
   padding: 20px;
-  flex-basis: 60%;
 }
 
 .description {
   background-color: #1b1b1b;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  margin: 0 10% 0 0;
+  margin: 30px;
   padding: 30px;
   font-size: 1.2em;
   text-align: justify;
@@ -133,13 +133,14 @@ a {
   background-color: #1b1b1b;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  margin: 50px 10% 0 0;
+  margin: 30px;
   padding: 30px;
   font-size: 1.2em;
 }
 
 @media screen and (max-width: 1000px) {
-  .header {
+  .header,
+  .links-container {
     display: none;
   }
 }
