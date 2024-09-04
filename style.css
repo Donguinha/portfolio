@@ -24,6 +24,7 @@ html {
 body {
   font-family: "Ubuntu", sans-serif;
   color: white;
+  background-color: black;
 }
 
 a {
@@ -59,14 +60,17 @@ a {
   width: 100%;
   background: linear-gradient(to bottom, #1b1b1b00, #1b1b1b 60%, #3c3b3b 100%),
     url("images/background-wallpaper.png") top/cover no-repeat #111010;
+  flex-wrap: wrap;
+  max-width: max-content;
 }
 
 .profile-container {
   display: flex;
   align-items: inherit;
   flex-direction: column;
+  justify-content: center;
+  justify-items: center;
   padding: 20px;
-  max-width: auto;
 }
 
 .profile-image {
@@ -118,7 +122,7 @@ a {
 .description-container {
   padding: 20px;
   flex-grow: 5;
-  max-width: min-content;
+  max-width: 1000px;
 }
 
 .description {
@@ -143,5 +147,9 @@ a {
 @media screen and (max-width: 1000px) {
   .header {
     display: none;
+  }
+
+  .profile-container {
+    width: 100%;
   }
 }
