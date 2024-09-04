@@ -61,7 +61,8 @@ a {
   background: linear-gradient(to bottom, #1b1b1b00, #1b1b1b 60%, #3c3b3b 100%),
     url("images/background-wallpaper.png") top/cover no-repeat #111010;
   flex-wrap: wrap;
-  max-width: max-content;
+  justify-content: center;
+  gap: 100px;
 }
 
 .profile-container {
@@ -121,8 +122,8 @@ a {
 
 .description-container {
   padding: 20px;
-  flex-grow: 5;
   max-width: 1000px;
+  gap: 100px;
 }
 
 .description {
