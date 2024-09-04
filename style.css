@@ -22,8 +22,6 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom, #1b1b1b00, #1b1b1b 60%, #3c3b3b 100%),
-    url("images/background-wallpaper.png") top/cover no-repeat #111010;
   font-family: "Ubuntu", sans-serif;
   color: white;
 }
@@ -59,7 +57,8 @@ a {
   align-items: center;
   padding-top: 30px;
   width: 100%;
-  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #1b1b1b00, #1b1b1b 60%, #3c3b3b 100%),
+    url("images/background-wallpaper.png") top/cover no-repeat #111010;
 }
 
 .profile-container {
@@ -67,6 +66,7 @@ a {
   align-items: inherit;
   flex-direction: column;
   padding: 20px;
+  max-width: auto;
 }
 
 .profile-image {
@@ -117,6 +117,8 @@ a {
 
 .description-container {
   padding: 20px;
+  flex-grow: 5;
+  max-width: min-content;
 }
 
 .description {
@@ -129,7 +131,7 @@ a {
   text-align: justify;
 }
 
-.skills-container {
+.skills {
   background-color: #1b1b1b;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
@@ -139,8 +141,7 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-  .header,
-  .links-container {
+  .header {
     display: none;
   }
 }
