@@ -12,11 +12,15 @@
 }
 
 :root {
-  --outline: #55505c 0 0 0 3px, #55505c 7px 7px 0 3px;
+  --outline:
+    var(--border-color) 0 0 0 3px,
+    var(--border-color) 7px 7px 0 3px,
+    rgba(255, 250, 138, 0.53) 5px 5px 40px;
   --border-radius: 15px;
-  --offwhite: #ffffe4;
-  --gray: #55505c;
-  --lightyellow: #faf33e50;
+  --body-background-color: #221911;
+  --border-color: #ddca7d;
+  --text-background-color: #221911;
+  --text-color: #ddca7d;
 }
 
 html {
@@ -25,13 +29,13 @@ html {
 
 body {
   font-family: "Ubuntu", sans-serif;
-  color: var(--gray);
-  background-color: var(--lightyellow);
+  color: var(--text-color);
+  background-color: var(--body-background-color);
 }
 
 a {
   text-decoration: none;
-  color: var(--gray);
+  color: var(--text-color);
 }
 
 .header {
@@ -46,7 +50,7 @@ a {
   border-radius: var(--border-radius);
   margin: 0 200px 0 200px;
   box-shadow: var(--outline);
-  background-color: var(--lightgreen);
+  background-color: var(--text-background-color);
 }
 
 .menu li {
@@ -71,15 +75,18 @@ a {
   justify-items: center;
   text-align: center;
   padding: 20px;
+
 }
 
 .profile-image {
   border-radius: 50%;
-  box-shadow: var(--gray) 0 0 0 5px, var(--gray) 20px 0 0 5px;
+  box-shadow:
+          var(--border-color) 0 0 0 5px,
+          var(--border-color) 20px 0 0 5px,
+          rgba(255, 250, 138, 0.65) 5px 5px 4000px;
   max-width: 100%;
   width: 300px;
   height: auto;
-  /*margin-top: 20px;*/
 }
 
 .profile-container h1 {
@@ -88,7 +95,7 @@ a {
   margin-top: 30px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  background-color: var(--lightgreen);
+  background-color: var(--text-background-color);
   padding: 15px 80px 15px 80px;
 }
 
@@ -98,7 +105,7 @@ a {
   margin-top: 30px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  background-color: var(--lightgreen);
+  background-color: var(--text-background-color);
   padding: 15px 40px 15px 40px;
 }
 
@@ -107,7 +114,7 @@ a {
   width: 70px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  background-color: var(--lightgreen);
+  background-color: var(--text-background-color);
   padding: 10px;
 }
 
@@ -116,7 +123,7 @@ a {
   width: 70px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  background-color: var(--lightgreen);
+  background-color: var(--text-background-color);
   padding: 5px;
 }
 
@@ -128,8 +135,8 @@ a {
 .description {
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  background-color: var(--lightgreen);
-  margin: 30px;
+  background-color: var(--text-background-color);
+  margin: 50px;
   padding: 30px;
   font-size: 1.2em;
   text-align: justify;
@@ -138,8 +145,8 @@ a {
 .skills {
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  background-color: var(--lightgreen);
-  margin: 30px;
+  background-color: var(--text-background-color);
+  margin: 50px;
   padding: 30px;
   font-size: 1.2em;
 }
@@ -164,6 +171,3 @@ a {
     display: none;
   }
 }
-
-
-
