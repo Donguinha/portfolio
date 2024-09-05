@@ -12,40 +12,41 @@
 }
 
 :root {
-  --outline: white 0 0 0 3px, white 7px 7px 0 3px;
+  --outline: #55505c 0 0 0 3px, #55505c 7px 7px 0 3px;
   --border-radius: 15px;
+  --offwhite: #ffffe4;
+  --gray: #55505c;
+  --lightyellow: #faf33e50;
 }
 
 html {
   box-sizing: border-box;
-  height: auto;
 }
 
 body {
   font-family: "Ubuntu", sans-serif;
-  color: white;
-  background: linear-gradient(to bottom, #1b1b1b00, #1b1b1b 60%, #3c3b3b 100%),
-  top/100% no-repeat #111010;
+  color: var(--gray);
+  background-color: var(--lightyellow);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--gray);
 }
 
 .header {
   position: sticky;
-  top: 1vh;
+  top: 10px;
 }
 
 .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #1b1b1b;
   border-radius: var(--border-radius);
-  margin: 0 25% 0 25%;
+  margin: 0 200px 0 200px;
   box-shadow: var(--outline);
+  background-color: var(--lightgreen);
 }
 
 .menu li {
@@ -58,10 +59,8 @@ a {
   display: flex;
   align-items: center;
   padding-top: 30px;
-  width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-evenly;
 }
 
 .profile-container {
@@ -70,27 +69,27 @@ a {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
+  text-align: center;
   padding: 20px;
 }
 
 .profile-image {
   border-radius: 50%;
-  box-shadow: white 0 0 0 5px, white 20px 0 0 5px;
+  box-shadow: var(--gray) 0 0 0 5px, var(--gray) 20px 0 0 5px;
   max-width: 100%;
   width: 300px;
   height: auto;
-  margin-top: 70px;
+  /*margin-top: 20px;*/
 }
 
 .profile-container h1 {
   font-size: 1.5em;
   font-weight: 400;
   margin-top: 30px;
-  background-color: #1b1b1b;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
-  padding: 18px 100px 18px 100px;
-  text-align: center;
+  background-color: var(--lightgreen);
+  padding: 15px 80px 15px 80px;
 }
 
 .profile-container h2 {
@@ -99,15 +98,16 @@ a {
   margin-top: 30px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
+  background-color: var(--lightgreen);
   padding: 15px 40px 15px 40px;
-  text-align: center;
 }
 
 .github-logo {
-  margin: 50px 50px 0px 0px;
+  margin: 50px 50px 0 0;
   width: 70px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
+  background-color: var(--lightgreen);
   padding: 10px;
 }
 
@@ -116,19 +116,19 @@ a {
   width: 70px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
+  background-color: var(--lightgreen);
   padding: 5px;
 }
 
 .description-container {
   padding: 20px;
-  max-width: 800px;
-  gap: 100px;
+  max-width: 900px;
 }
 
 .description {
-  background-color: #1b1b1b;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
+  background-color: var(--lightgreen);
   margin: 30px;
   padding: 30px;
   font-size: 1.2em;
@@ -136,20 +136,34 @@ a {
 }
 
 .skills {
-  background-color: #1b1b1b;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
+  background-color: var(--lightgreen);
   margin: 30px;
   padding: 30px;
   font-size: 1.2em;
 }
 
-@media screen and (max-width: 1000px) {
-  .header {
-    display: none;
+@media screen and (max-width: 500px) {
+  /*.header {*/
+  /*  display: none;*/
+  /*}*/
+
+  .home-container {
+    gap: 2%;
   }
 
   .profile-container {
     width: 100%;
   }
 }
+
+
+@media screen and (max-width: 1000px) {
+  .header {
+    display: none;
+  }
+}
+
+
+
