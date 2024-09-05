@@ -75,34 +75,33 @@ a {
   justify-items: center;
   text-align: center;
   padding: 20px;
-
 }
 
 .profile-image {
   border-radius: 50%;
+  margin-top: 20px;
   box-shadow:
           var(--border-color) 0 0 0 5px,
           var(--border-color) 20px 0 0 5px,
-          rgba(255, 250, 138, 0.65) 5px 5px 4000px;
-  max-width: 100%;
-  width: 300px;
-  height: auto;
+          rgba(255, 250, 138, 0.7) 5px 5px 4000px;
+  width: 70%;
+  max-width: 400px;
 }
 
-.profile-container h1 {
+.profile-title1 {
   font-size: 1.5em;
   font-weight: 400;
-  margin-top: 30px;
+  margin: 60px 50px 30px 50px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
   background-color: var(--text-background-color);
   padding: 15px 80px 15px 80px;
 }
 
-.profile-container h2 {
+.profile-title2 {
   font-size: 1.2em;
   font-weight: 200;
-  margin-top: 30px;
+  margin: 0 50px 50px 50px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
   background-color: var(--text-background-color);
@@ -110,7 +109,7 @@ a {
 }
 
 .github-logo {
-  margin: 50px 50px 0 0;
+  margin: 20px 25px 0 0;
   width: 70px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
@@ -119,7 +118,7 @@ a {
 }
 
 .linkedin-logo {
-  margin-top: 50px;
+  margin: 20px 0 0 25px;
   width: 70px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
@@ -129,7 +128,8 @@ a {
 
 .description-container {
   padding: 20px;
-  max-width: 900px;
+  max-width: 800px;
+  flex-grow: 1;
 }
 
 .description {
@@ -160,6 +160,13 @@ a {
   margin: 10px 0;
 }
 
+.career-container {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  background-color: var(--text-color);
+}
+
 @media screen and (max-width: 500px) {
   /*.header {*/
   /*  display: none;*/
@@ -168,14 +175,10 @@ a {
   .home-container {
     gap: 2%;
   }
-
-  .profile-container {
-    width: 100%;
-  }
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .header {
     display: none;
   }
