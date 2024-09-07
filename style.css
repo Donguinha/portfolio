@@ -31,14 +31,14 @@ body {
   background-color: var(--body-background-color);
 }
 
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-.header {
+.nav-bar {
   position: sticky;
   top: 10px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .menu {
@@ -177,7 +177,7 @@ a {
 }
 
 @media screen and (max-width: 1100px) {
-  .header {
+  .nav-bar {
     display: none;
   }
 }
