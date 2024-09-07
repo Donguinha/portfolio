@@ -13,7 +13,7 @@
 
 :root {
   --outline: var(--border-color) 0 0 0 3px, var(--border-color) 7px 7px 0 3px,
-    rgba(255, 250, 138, 0.53) 5px 5px 40px;
+    var(--border-color) 5px 5px 25px;
   --border-radius: 15px;
   --body-background-color: #221911;
   --border-color: #ddca7d;
@@ -78,7 +78,7 @@ body {
   border-radius: 50%;
   margin-top: 20px;
   box-shadow: var(--border-color) 0 0 0 5px, var(--border-color) 20px 0 0 5px,
-    rgba(255, 250, 138, 0.7) 5px 5px 4000px;
+    var(--border-color) 0 0 25px, var(--border-color) 20px 0 25px;
   width: 70%;
   max-width: 400px;
 }
