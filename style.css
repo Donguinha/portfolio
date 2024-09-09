@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 * {
   padding: 0;
@@ -23,10 +23,11 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   color: var(--text-color);
   background-color: var(--body-background-color);
 }
@@ -53,7 +54,7 @@ body {
 
 .menu li {
   padding: 15px;
-  font-size: 1.2em;
+  font-weight: 300;
   list-style: none;
 }
 
@@ -85,7 +86,7 @@ body {
 
 .profile-title1 {
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 500;
   margin: 60px 50px 30px 50px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
@@ -94,8 +95,8 @@ body {
 }
 
 .profile-title2 {
-  font-size: 1.2em;
-  font-weight: 200;
+  font-size: 1em;
+  font-weight: 400;
   margin: 0 50px 50px 50px;
   border-radius: var(--border-radius);
   box-shadow: var(--outline);
@@ -145,7 +146,7 @@ body {
   background-color: var(--text-background-color);
   margin: 50px;
   padding: 30px;
-  font-size: 1.2em;
+  font-weight: 300;
   text-align: justify;
 }
 
@@ -155,12 +156,13 @@ body {
   background-color: var(--text-background-color);
   margin: 50px;
   padding: 30px;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: 300;
 }
 
-.skill-title {
-  font-size: 1.2em;
-  font-weight: 200;
+.skills-container h2 {
+  font-size: 1em;
+  font-weight: 300;
 }
 
 .line::before {
@@ -185,17 +187,11 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .header {
-    display: none;
-  }
-
   .home-container {
     gap: 2%;
   }
-}
 
-@media screen and (max-width: 1100px) {
-  .nav-bar {
-    display: none;
+  .menu {
+    margin: 0 20px 0 20px;
   }
 }
