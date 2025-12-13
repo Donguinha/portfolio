@@ -13,10 +13,8 @@
     <header class="header">
       <nav class="nav-bar">
         <ul class="menu">
-          <li><a href="#home-container ">home</a></li>
-          <li><a href="#career-container ">carreira</a></li>
-          <li><a href="#projects-container">projetos</a></li>
-          <li><a href="">contato</a></li>
+          <li><a href="#home-container">home</a></li>
+          <li><a href="#game-container">game</a></li>
         </ul>
       </nav>
     </header>
@@ -51,9 +49,6 @@
                   class="linkedin-logo"
                 />
               </a>
-              <a href="cv.pdf" target="_blank" rel="external">
-                <img src="images/cv.png" alt="cv-logo" class="cv-logo" />
-              </a>
             </div>
           </div>
         </section>
@@ -67,35 +62,21 @@
               JavaScript, pensando futuramente em aprender React com o objetivo
               de me tornar full-stack.
             </p>
-            <div class="skills-container">
-              <h2>Skills</h2>
-              <span class="line"></span>
-              <ul>
-                <li>.NET</li>
-                <li>ASP.NET Core</li>
-                <li>Entity Framework</li>
-                <li>PostgreSQL</li>
-                <li>Docker</li>
-                <li>AWS</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
           </div>
         </section>
       </div>
     </main>
     <section>
-      <div id="career-container">
-        <p class="profile-title2">em breve descrição da carreira</p>
-      </div>
-    </section>
-    <section>
-      <div id="projects-container">
-        <p class="profile-title2">em breve meus projetos feitos</p>
+      <div id="game-container">
+        <h2 class="profile-title2">Jogo da Cobrinha</h2>
+        <div class="game-container">
+          <canvas id="snakeGame" width="400" height="400"></canvas>
+          <div class="game-controls">
+            <p>Use as setas do teclado para jogar</p>
+            <p>Pontuação: <span id="score">0</span></p>
+            <button id="restartBtn">Reiniciar</button>
+          </div>
+        </div>
       </div>
     </section>
   </body>
